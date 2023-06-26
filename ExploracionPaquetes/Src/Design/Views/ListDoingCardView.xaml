@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExploracionPaquetes.Src.Design.Views.ListDoingCardView"
+             x:Name="ListDoingCard"
+             Title="ListDoingCardView">    
+    <Grid Margin="10">
+        <ScrollView Orientation="Horizontal">
+            <HorizontalStackLayout BindableLayout.ItemsSource="{Binding Cards}">
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate>
+                        <Frame Margin="8,0"
+                               WidthRequest="160">
+                            <Frame.GestureRecognizers>
+                                <DropGestureRecognizer DropCommand="{Binding BindingContext.DropCardCommand, Source={x:Reference ListDoingCard}}"
+                                                       DropCommandParameter="{Binding .}"/>
+                            </Frame.GestureRecognizers>
+                            <VerticalStackLayout>
+                                <Label Text="{Binding Title}"/>
+                                <CollectionView ItemsSource="{Binding ListCardsDoing}">
+                                    <CollectionView.ItemTemplate>
+                                        <DataTemplate>
+                                            <Frame WidthRequest="100"
+                                                    Margin="0,0,0,8">
+                                                <Frame.GestureRecognizers>                                                        
+                                                    <DragGestureRecognizer DragStartingCommand="{Binding BindingContext.DragCardCommand, Source={x:Reference ListDoingCard}}"
+                                                                            DragStartingCommandParameter="{Binding .}"/>
+                                                </Frame.GestureRecognizers>
+                                                <Label Text="{Binding NameDo}"/>
+                                            </Frame>
+                                        </DataTemplate>
+                                    </CollectionView.ItemTemplate>                                                                        
+                                </CollectionView>
+                            </VerticalStackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
+            </HorizontalStackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

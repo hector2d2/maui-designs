@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExploracionPaquetes.Src.Security.Views.SecurityHome"
+             Title="SecurityHome">
+    <VerticalStackLayout>
+        <Frame>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding GoToFingerPrintCommand}"/>
+            </Frame.GestureRecognizers>
+            <Label Text="FingerPrint"/>
+        </Frame>
+        <Frame>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding GoToCameraCommand}"/>
+            </Frame.GestureRecognizers>
+            <Label Text="Camara"/>
+        </Frame>
+    </VerticalStackLayout>
+</ContentPage>

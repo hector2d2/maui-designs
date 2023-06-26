@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExploracionPaquetes.Src.Security.Views.FingerPrintView"
+             Title="FingerPrintView">
+    <VerticalStackLayout Margin="8">
+        <Label Text="Paquete Plugin.FingerPrint  3.0.0"
+               Margin="0,0,0,8"/>
+        <Button Text="Probar"
+                Command="{Binding AuthenticationCommand}"/>
+    </VerticalStackLayout>
+</ContentPage>

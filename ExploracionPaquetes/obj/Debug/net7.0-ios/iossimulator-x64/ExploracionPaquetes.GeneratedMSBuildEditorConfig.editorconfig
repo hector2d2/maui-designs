@@ -1,0 +1,71 @@
+is_global = true
+build_property.TargetFramework = net7.0-ios
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ExploracionPaquetes
+build_property.ProjectDir = /Users/sanbornhermanos/Projects/ExploracionPaquetes/ExploracionPaquetes/
+
+[/Users/sanbornhermanos/Projects/ExploracionPaquetes/ExploracionPaquetes/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ExploracionPaquetes.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[/Users/sanbornhermanos/Projects/ExploracionPaquetes/ExploracionPaquetes/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ExploracionPaquetes.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Colors.xaml
+
+[/Users/sanbornhermanos/Projects/ExploracionPaquetes/ExploracionPaquetes/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ExploracionPaquetes.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Styles.xaml
+
+[/Users/sanbornhermanos/Projects/ExploracionPaquetes/ExploracionPaquetes/Src/Design/Views/DesignHomeView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ExploracionPaquetes.Src.Design.Views.DesignHomeView.xaml
+build_metadata.AdditionalFiles.TargetPath = Src/Design/Views/DesignHomeView.xaml
+build_metadata.AdditionalFiles.RelativePath = Src/Design/Views/DesignHomeView.xaml
+
+[/Users/sanbornhermanos/Projects/ExploracionPaquetes/ExploracionPaquetes/Src/Design/Views/ImagesWithMovement.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ExploracionPaquetes.Src.Design.Views.ImagesWithMovement.xaml
+build_metadata.AdditionalFiles.TargetPath = Src/Design/Views/ImagesWithMovement.xaml
+build_metadata.AdditionalFiles.RelativePath = Src/Design/Views/ImagesWithMovement.xaml
+
+[/Users/sanbornhermanos/Projects/ExploracionPaquetes/ExploracionPaquetes/Src/Design/Views/ListDoingCardView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ExploracionPaquetes.Src.Design.Views.ListDoingCardView.xaml
+build_metadata.AdditionalFiles.TargetPath = Src/Design/Views/ListDoingCardView.xaml
+build_metadata.AdditionalFiles.RelativePath = Src/Design/Views/ListDoingCardView.xaml
+
+[/Users/sanbornhermanos/Projects/ExploracionPaquetes/ExploracionPaquetes/Src/Home/Views/HomeView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ExploracionPaquetes.Src.Home.Views.HomeView.xaml
+build_metadata.AdditionalFiles.TargetPath = Src/Home/Views/HomeView.xaml
+build_metadata.AdditionalFiles.RelativePath = Src/Home/Views/HomeView.xaml
+
+[/Users/sanbornhermanos/Projects/ExploracionPaquetes/ExploracionPaquetes/Src/Security/Views/CameraView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ExploracionPaquetes.Src.Security.Views.CameraView.xaml
+build_metadata.AdditionalFiles.TargetPath = Src/Security/Views/CameraView.xaml
+build_metadata.AdditionalFiles.RelativePath = Src/Security/Views/CameraView.xaml
+
+[/Users/sanbornhermanos/Projects/ExploracionPaquetes/ExploracionPaquetes/Src/Security/Views/FingerPrintView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ExploracionPaquetes.Src.Security.Views.FingerPrintView.xaml
+build_metadata.AdditionalFiles.TargetPath = Src/Security/Views/FingerPrintView.xaml
+build_metadata.AdditionalFiles.RelativePath = Src/Security/Views/FingerPrintView.xaml
+
+[/Users/sanbornhermanos/Projects/ExploracionPaquetes/ExploracionPaquetes/Src/Security/Views/SecurityHome.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ExploracionPaquetes.Src.Security.Views.SecurityHome.xaml
+build_metadata.AdditionalFiles.TargetPath = Src/Security/Views/SecurityHome.xaml
+build_metadata.AdditionalFiles.RelativePath = Src/Security/Views/SecurityHome.xaml
