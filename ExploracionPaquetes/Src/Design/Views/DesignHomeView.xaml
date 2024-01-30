@@ -16,5 +16,47 @@
             </Frame.GestureRecognizers>
             <Label Text="Lista de Tareas"/>
         </Frame>
+        <Frame>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding GoToCalendarCommand}"/>
+            </Frame.GestureRecognizers>
+            <Label Text="Calendario"/>
+        </Frame>
+        <Frame>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding GoToCalendarV2Command}"/>
+            </Frame.GestureRecognizers>
+            <Label Text="Calendario V2"/>
+        </Frame>
+        <Frame>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding GoToFoatingBottomMenuCommand}"/>
+            </Frame.GestureRecognizers>
+            <Label Text="Menu Abajo Flotante"/>
+        </Frame>
+        <Frame>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding GoToMapCommand}"/>
+            </Frame.GestureRecognizers>
+            <Label Text="Mapa"/>
+        </Frame>
+        <Frame>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding GoToSettingsCommand}"/>
+            </Frame.GestureRecognizers>
+            <Label Text="Configuraciones"/>
+        </Frame>
+        <Frame>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding GoToSettingsCommand}"/>
+            </Frame.GestureRecognizers>
+            <Label Text="Diseño de Drawer"/>
+        </Frame>
+        <Frame>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding GoToRemindersCommand}"/>
+            </Frame.GestureRecognizers>
+            <Label Text="Recordatorios"/>
+        </Frame>
     </VerticalStackLayout>
 </ContentPage>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>346815272914-3jmvre5ibfrhk8dr7057fd6sn567696u.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.346815272914-3jmvre5ibfrhk8dr7057fd6sn567696u</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBjiskx6nNJ5FD6wTvcwX1iT9VytV7GIAQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>346815272914</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.companyname.exploracionpaquetes</string>
+	<key>PROJECT_ID</key>
+	<string>rotcehchat</string>
+	<key>STORAGE_BUCKET</key>
+	<string>rotcehchat.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:346815272914:ios:abaf2777917464bec6da0b</string>
+</dict>
+</plist>

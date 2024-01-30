@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExploracionPaquetes.Src.Design.Views.RemindersView"
+             Title="RemindersView">
+    <Grid>
+<!-- Recordatorios Del dia Actual-->
+        <Grid x:Name="ReminderOfDay">
+            <ScrollView>
+                <VerticalStackLayout Margin="10">
+                    <Label Text="Bienvenido"
+                           FontAttributes="Bold"
+                           FontSize="Title"/>
+                    <Label Text="Recordatorios Del día de hoy"
+                           FontSize="Body"/>
+                   <VerticalStackLayout BindableLayout.ItemsSource="{Binding MyNotifications}">
+                        <BindableLayout.ItemTemplate>
+                            <DataTemplate>
+                                <Frame HasShadow="True"
+                                       Margin="0,8">
+                                    <VerticalStackLayout>
+                                        <Label Text="{Binding Subtitle}"
+                                                FontSize="Subtitle"
+                                                FontAttributes="Bold"/>
+                                        <Label Text="{Binding Description}"
+                                                Margin="0,0,0,8"/>
+                                        <Label Text="{Binding  Schedule.NotifyTime }"
+                                                FontSize="Subtitle"/>
+                                    </VerticalStackLayout>
+                                </Frame>
+                            </DataTemplate>
+                        </BindableLayout.ItemTemplate>
+                    </VerticalStackLayout>
+                </VerticalStackLayout>
+            </ScrollView>
+            <Image VerticalOptions="Start"
+                   Margin="15"
+                   WidthRequest="50"
+                   HeightRequest="50"
+                   HorizontalOptions="End">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer x:Name="ImgAddReminder"
+                                          Tapped="ImgAddReminder_Tapped"/>
+                </Image.GestureRecognizers>
+                <Image.Source>
+                    <FontImageSource Glyph="&#xf055;"
+                                     Color="Black"
+                                     FontFamily="FAS"/>
+                </Image.Source>
+            </Image>
+        </Grid>
+
+<!-- Recordatorios Por Calendario-->
+        <Grid x:Name="ReminderOfCalendar"
+              IsVisible="false">
+            <ScrollView>               
+                <VerticalStackLayout  Margin="10">
+    <!--Calendario-->
+                    <VerticalStackLayout Margin="0,8">
+                        <HorizontalStackLayout HorizontalOptions="Center">
+                            <Button Text="Atras"
+                                    x:Name="BtnMonthBefore"
+                                    Clicked="BtnMonthBefore_Clicked"/>
+                            <Label x:Name="TxtNameMonth"
+                                   VerticalOptions="Center"
+                                   Margin="8,0"/>
+                            <Button Text="Adelante"
+                                    Clicked="BtnMonthAfter_Clicked"
+                                    x:Name="BtnMonthAfter"/>
+                        </HorizontalStackLayout>
+                        <Grid ColumnDefinitions=".14*,.14*,.14*,.14*,.14*,.14*,.14*">            
+                            <Label Text="D"
+                                    HorizontalOptions="Center"/>
+                            <Label Text="L"
+                                    HorizontalOptions="Center"
+                                    Grid.Column="1"/>
+                            <Label Text="M"
+                                    HorizontalOptions="Center"
+                                    Grid.Column="2"/>
+                            <Label Text="M"
+                                    HorizontalOptions="Center"
+                                    Grid.Column="3"/>
+                            <Label Text="J"
+                                    HorizontalOptions="Center"
+                                    Grid.Column="4"/>
+                            <Label Text="V"
+                                    HorizontalOptions="Center"
+                                    Grid.Column="5"/>
+                            <Label Text="S"
+                                    HorizontalOptions="Center"
+                                    Grid.Column="6"/>
+                        </Grid>
+                        <CollectionView ItemsSource="{Binding Numbersday}">            
+                             <CollectionView.ItemsLayout>
+                                 <GridItemsLayout Span="7" 
+                                                  Orientation="Vertical"/>
+                             </CollectionView.ItemsLayout>
+                             <CollectionView.ItemTemplate>
+                                 <DataTemplate>
+                                    <Grid Margin="0,8">
+                                        <Grid.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="ContainerDay_Tapped"
+                                                                  x:Name="ContainerDay"/>
+                                        </Grid.GestureRecognizers>
+                                        <Label Text="{Binding .}"
+                                               HorizontalOptions="Center"
+                                               Margin="8"
+                                               VerticalOptions="Center"/>
+                                    </Grid>
+                                 </DataTemplate>
+                             </CollectionView.ItemTemplate>
+                        </CollectionView>
+                    </VerticalStackLayout>
+
+    <!--Lista de Recordatiorios-->
+                    
+                    <!--<Frame HasShadow="True"
+                            Margin="0,8">
+                        <VerticalStackLayout>
+                            <Label Text="Test Covid"
+                                    FontSize="Subtitle"
+                                    FontAttributes="Bold"/>
+                            <Label Text="Id monitor: 472746"
+                                    Margin="0,0,0,8"/>
+                            <Label Text="Agendado a las 9:20 am"
+                                    FontSize="Subtitle"/>
+                        </VerticalStackLayout>
+                    </Frame>
+                    <Frame HasShadow="True"
+                            Margin="0,8">
+                        <VerticalStackLayout>
+                            <Label Text="Test Covid"
+                                    FontSize="Subtitle"
+                                    FontAttributes="Bold"/>
+                            <Label Text="Id monitor: 472746"
+                                    Margin="0,0,0,8"/>
+                            <Label Text="Agendado a las 9:20 am"
+                                    FontSize="Subtitle"/>
+                        </VerticalStackLayout>
+                    </Frame>
+                    <Frame HasShadow="True"
+                            Margin="0,8">
+                        <VerticalStackLayout>
+                            <Label Text="Test Covid"
+                                    FontSize="Subtitle"
+                                    FontAttributes="Bold"/>
+                            <Label Text="Id monitor: 472746"
+                                    Margin="0,0,0,8"/>
+                            <Label Text="Agendado a las 9:20 am"
+                                    FontSize="Subtitle"/>
+                        </VerticalStackLayout>
+                    </Frame>
+                    <Frame HasShadow="True"
+                            Margin="0,8">
+                        <VerticalStackLayout>
+                            <Label Text="Test Covid"
+                                    FontSize="Subtitle"
+                                    FontAttributes="Bold"/>
+                            <Label Text="Id monitor: 472746"
+                                    Margin="0,0,0,8"/>
+                            <Label Text="Agendado a las 9:20 am"
+                                    FontSize="Subtitle"/>
+                        </VerticalStackLayout>
+                    </Frame>
+                    <Frame HasShadow="True"
+                            Margin="0,8">
+                        <VerticalStackLayout>
+                            <Label Text="Test Covid"
+                                    FontSize="Subtitle"
+                                    FontAttributes="Bold"/>
+                            <Label Text="Id monitor: 472746"
+                                    Margin="0,0,0,8"/>
+                            <Label Text="Agendado a las 9:20 am"
+                                    FontSize="Subtitle"/>
+                        </VerticalStackLayout>
+                    </Frame>-->
+                    <VerticalStackLayout HeightRequest="100"/>
+                </VerticalStackLayout>
+            </ScrollView>
+        </Grid>
+
+<!-- Menu Flotante-->
+         <Frame x:Name="MenuBottom"
+               VerticalOptions="End"
+               CornerRadius="25"
+               Margin="30"
+               BackgroundColor="Black">
+            <Grid ColumnDefinitions="*,*">
+                <VerticalStackLayout HorizontalOptions="Center">
+                    <VerticalStackLayout.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="MenuToday"
+                                              Tapped="MenuToday_Tapped"/>
+                    </VerticalStackLayout.GestureRecognizers>
+                    <Image>
+                        <Image.Source>
+                            <FontImageSource Glyph="&#xf015;"
+                                             x:Name="ImgToday"
+                                             Color="Gold"
+                                             FontFamily="FAS"/>
+                        </Image.Source>
+                    </Image>  
+                    <Label Text="Inicio"
+                           x:Name="TxtMenuInit"
+                           TextColor="Gold"/>
+                </VerticalStackLayout>
+                <VerticalStackLayout Grid.Column="1"
+                                     HorizontalOptions="Center">
+                    <VerticalStackLayout.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="MenuCalendar"
+                                              Tapped="MenuCalendar_Tapped"/>
+                    </VerticalStackLayout.GestureRecognizers>
+                    <Image>
+                        <Image.Source>
+                            <FontImageSource Glyph="&#xf133;"
+                                             x:Name="ImgCalendar"
+                                             FontFamily="FAS"/>
+                        </Image.Source>
+                    </Image>  
+                    <Label Text="Calendario"
+                           x:Name="TxtMenuEvent"
+                           TextColor="White"/>
+                </VerticalStackLayout>
+                
+            </Grid>
+        </Frame>
+    </Grid>
+</ContentPage>

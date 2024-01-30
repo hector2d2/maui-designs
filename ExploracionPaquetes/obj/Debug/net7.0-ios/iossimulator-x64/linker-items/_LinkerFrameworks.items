@@ -256,9 +256,6 @@
     <_LinkerFrameworks Include="UIKit">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
-    <_LinkerFrameworks Include="UserNotifications">
-      <IsWeak>false</IsWeak>
-    </_LinkerFrameworks>
     <_LinkerFrameworks Include="UserNotificationsUI">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
@@ -272,9 +269,6 @@
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
     <_LinkerFrameworks Include="WatchConnectivity">
-      <IsWeak>false</IsWeak>
-    </_LinkerFrameworks>
-    <_LinkerFrameworks Include="WebKit">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
     <_LinkerFrameworks Include="Accessibility">
@@ -370,7 +364,13 @@
     <_LinkerFrameworks Include="UniformTypeIdentifiers">
       <IsWeak>true</IsWeak>
     </_LinkerFrameworks>
+    <_LinkerFrameworks Include="UserNotifications">
+      <IsWeak>true</IsWeak>
+    </_LinkerFrameworks>
     <_LinkerFrameworks Include="VisionKit">
+      <IsWeak>true</IsWeak>
+    </_LinkerFrameworks>
+    <_LinkerFrameworks Include="WebKit">
       <IsWeak>true</IsWeak>
     </_LinkerFrameworks>
     <_LinkerFrameworks Include="GSS">

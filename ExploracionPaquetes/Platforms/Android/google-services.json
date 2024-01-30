@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "346815272914",
+    "project_id": "rotcehchat",
+    "storage_bucket": "rotcehchat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:346815272914:android:d48473c132a04a27c6da0b",
+        "android_client_info": {
+          "package_name": "com.companyname.exploracionpaquetes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "346815272914-e6s9hg9dcfqmsuv9eab7j9n1nkbqshqf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOkVrdKWgCiB1jPPhu9CIOxSHsgNEgaVs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "346815272914-e6s9hg9dcfqmsuv9eab7j9n1nkbqshqf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "346815272914-3jmvre5ibfrhk8dr7057fd6sn567696u.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.companyname.exploracionpaquetes"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:346815272914:android:5c0d5b5b30c2c25ac6da0b",
+        "android_client_info": {
+          "package_name": "com.companyname.mauichat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "346815272914-e6s9hg9dcfqmsuv9eab7j9n1nkbqshqf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOkVrdKWgCiB1jPPhu9CIOxSHsgNEgaVs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "346815272914-e6s9hg9dcfqmsuv9eab7j9n1nkbqshqf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "346815272914-3jmvre5ibfrhk8dr7057fd6sn567696u.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.companyname.exploracionpaquetes"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

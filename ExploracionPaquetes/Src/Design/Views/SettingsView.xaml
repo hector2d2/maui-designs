@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExploracionPaquetes.Src.Design.Views.SettingsView"
+             Title="SettingsView">
+    <Grid>
+        <VerticalStackLayout HeightRequest="250"
+                             VerticalOptions="Start"
+                             BackgroundColor="Black">
+             <Label Text="Configuración"
+                    FontSize="Title"
+                    TextColor="White"  
+                    FontAttributes="Bold"
+                    Margin="4"/>
+             <VerticalStackLayout >
+                 <Frame HeightRequest="80"
+                        Margin="10,0,0,0"
+                        WidthRequest="80"
+                        BackgroundColor="Red"
+                        CornerRadius="40">
+                 </Frame>
+                 <VerticalStackLayout Grid.Column="1"
+                                      HorizontalOptions="Center"
+                                      Margin="10,0,0,0"
+                                      VerticalOptions="Center">
+                     <Label Text="Hector Ricardo Tristan Mendez"
+                            HorizontalOptions="Center"
+                            TextColor="White"/>
+                     <Label Text="5788022"
+                            HorizontalOptions="Center"
+                            TextColor="White"/>
+                 </VerticalStackLayout>
+             </VerticalStackLayout>
+        </VerticalStackLayout>
+        <ScrollView>
+            <VerticalStackLayout>
+                <VerticalStackLayout HeightRequest="190"/>
+                <Frame Margin="8"
+                       HasShadow="True">
+                    <VerticalStackLayout>
+                        <Label Text="Preferencias"
+                               FontAttributes="Bold"
+                               FontSize="Subtitle"/>
+                        <Grid ColumnDefinitions="*,Auto"
+                              Margin="0,10">
+                            <Grid.GestureRecognizers>
+                                <TapGestureRecognizer x:Name="GridTheme"
+                                                      Tapped="GridTheme_Tapped"/>
+                            </Grid.GestureRecognizers>
+                            <Label Text="Tema Oscuro"
+                                   Margin="8"
+                                   VerticalOptions="Center"/>
+                            <Switch VerticalOptions="Center" 
+                                    x:Name="SwitchTheme"
+                                    Margin="8"
+                                    Grid.Column="1"/>
+                        </Grid>
+                        <Grid ColumnDefinitions="*,Auto"
+                              Margin="0,10">
+                            <Label Text="Tema de Aplicación"
+                                   Margin="8"
+                                   VerticalOptions="Center"/>
+                            <Image Grid.Column="1"
+                                   Margin="8">
+                                <Image.Source>
+                                    <FontImageSource Glyph="&#xf105;"
+                                                     FontFamily="FAS"
+                                                     Color="Black"/>
+                                </Image.Source>
+                            </Image>
+                        </Grid>
+                        <Grid ColumnDefinitions="*,Auto"
+                              Margin="0,10">
+                            <Label Text="Cambiar Tamaño Letra"
+                                   Margin="8"
+                                   VerticalOptions="Center"/>
+                            <Image Grid.Column="1"
+                                   Margin="8">
+                                <Image.Source>
+                                    <FontImageSource Glyph="&#xf105;"
+                                                     FontFamily="FAS"
+                                                     Color="Black"/>
+                                </Image.Source>
+                            </Image>
+                        </Grid>
+                        <Label Text="Notificaciones"
+                               FontAttributes="Bold"
+                               FontSize="Subtitle"/>
+                        <Grid ColumnDefinitions="*,Auto"
+                              Margin="0,10">
+                            <Label Text="Notificaciones"
+                                   Margin="8"
+                                   VerticalOptions="Center"/>
+                            <Image Grid.Column="1"
+                                   Margin="8">
+                                <Image.Source>
+                                    <FontImageSource Glyph="&#xf105;"
+                                                     FontFamily="FAS"
+                                                     Color="Black"/>
+                                </Image.Source>
+                            </Image>
+                        </Grid>
+                        <Label Text="Informacion"
+                               FontAttributes="Bold"
+                               FontSize="Subtitle"/>
+                        <Grid ColumnDefinitions="*,Auto"
+                              Margin="0,10">
+                            <Label Text="Aviso de Privacidad"
+                                   Margin="8"
+                                   VerticalOptions="Center"/>
+                            <Image Grid.Column="1"
+                                   Margin="8">
+                                <Image.Source>
+                                    <FontImageSource Glyph="&#xf105;"
+                                                     FontFamily="FAS"
+                                                     Color="Black"/>
+                                </Image.Source>
+                            </Image>
+                        </Grid>
+                        <Grid ColumnDefinitions="*,Auto"
+                              Margin="0,10">
+                            <Label Text="Cerrar Sesión"
+                                   Margin="8"
+                                   VerticalOptions="Center"/>
+                        </Grid>
+                        <VerticalStackLayout Margin="0,8"
+                                             BackgroundColor="White">
+                            <Label Text="Version 3.0.42"
+                                   HorizontalOptions="Center"/>
+                            <Label Text="ID 1o31o31k-131m3k13k-1k31lk3k1"
+                                   HorizontalOptions="Center"/>
+                        </VerticalStackLayout>
+                    </VerticalStackLayout>
+                </Frame>
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

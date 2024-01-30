@@ -16,5 +16,17 @@
             </Frame.GestureRecognizers>
             <Label Text="Diseño"/>
         </Frame>
+        <Frame>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding GoToSignInViewCommand}"/>
+            </Frame.GestureRecognizers>
+            <Label Text="Autenticacion."/>
+        </Frame>
+         <Frame>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding GotoMenuListTodoCommand}"/>
+            </Frame.GestureRecognizers>
+            <Label Text="Lista de cosas."/>
+        </Frame>
     </VerticalStackLayout>
 </ContentPage>

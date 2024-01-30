@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExploracionPaquetes.Src.Templates.ListTodo.Views.ListTodoView"
+             xmlns:customController="clr-namespace:ExploracionPaquetes.Src.CustomControllers"
+             Title="ListTodo">
+    <Grid>
+        <Grid RowDefinitions="Auto,Auto,*,Auto"
+              Margin="8">
+            <HorizontalStackLayout Margin="0,0,0,8"
+                                   HorizontalOptions="FillAndExpand">
+                <Button Text="Menu"
+                        x:Name="BtnMenu"
+                        Clicked="BtnMenu_Clicked"/>
+                <Label Text="Exteriores"
+                       VerticalOptions="Center"
+                       HorizontalTextAlignment="Center"
+                       HorizontalOptions="Center"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Grid.Row="1"
+                                   HorizontalOptions="Center"
+                                   Margin="0,0,0,8">
+                <Button Text="Tareas"
+                        Margin="4,0"
+                        Command="{Binding SelectTodoListVisibleCommand}"/>
+                <Button Text="Expectativa"
+                        Command="{Binding SelectExpectationVisibleCommand}"
+                        Margin="4,0"/>
+                <Button Text="Observaciones"
+                        Margin="4,0"
+                        Command="{Binding SelectObservationVisibleCommand}"/>            
+            </HorizontalStackLayout>
+            <ScrollView IsVisible="{Binding IsTodoListVisible}"
+                        Grid.Row="2">
+                <VerticalStackLayout BindableLayout.ItemsSource="{Binding Todos}">
+                   <BindableLayout.ItemTemplate>
+                       <DataTemplate>
+                            <Grid ColumnDefinitions="*,Auto">
+                                <Label Text="{Binding Title}"
+                                       VerticalOptions="Center"/>
+                                <CheckBox IsChecked="{Binding IsSelected}"
+                                          Grid.Column="1"/> 
+                            </Grid>
+                       </DataTemplate>
+                   </BindableLayout.ItemTemplate>
+                </VerticalStackLayout>
+            </ScrollView>
+            <VerticalStackLayout Grid.Row="2"
+                                 IsVisible="{Binding IsExpectationVisible}">
+                <Label Text="Expectativas"/>
+            </VerticalStackLayout>
+            <VerticalStackLayout Grid.Row="2"
+                                 IsVisible="{Binding IsObservationsVisible}">
+                <Label Text="Observaciones"/>
+            </VerticalStackLayout>
+            <HorizontalStackLayout Grid.Row="3"
+                                   HorizontalOptions="CenterAndExpand">
+                <Button Text="Atras"/>
+                <Button Text="Guardad"
+                        Command="{Binding SeeTodosCommand}"
+                        Grid.Row="1"/>
+                <Button Text="Adelante"/>
+            </HorizontalStackLayout>        
+        </Grid>
+        <customController:CustomBottomSheet x:Name="BSlistTodoSection"
+                                            HeaderText="Lista de Secciones">
+            <customController:CustomBottomSheet.BottomSheetContent>
+                <ScrollView>
+                    <VerticalStackLayout>
+                        <Label Text="Exteriores"/>
+                        <Label Text="Baños"/>
+                        <Label Text="Exteriores"/>
+                        <Label Text="Baños"/>
+                        <Label Text="Exteriores"/>
+                        <Label Text="Baños"/>
+                    </VerticalStackLayout>
+                </ScrollView>
+            </customController:CustomBottomSheet.BottomSheetContent>
+        </customController:CustomBottomSheet>
+    </Grid>
+</ContentPage>

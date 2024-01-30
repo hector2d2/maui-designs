@@ -16,5 +16,17 @@
             </Frame.GestureRecognizers>
             <Label Text="Camara"/>
         </Frame>
+        <Frame>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding GoToInvoqueNativeCodeCommand}"/>
+            </Frame.GestureRecognizers>
+            <Label Text="Codigo Nativo"/>
+        </Frame>
+        <Frame>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding GoToAlertCommand}"/>
+            </Frame.GestureRecognizers>
+            <Label Text="Alarma"/>
+        </Frame>
     </VerticalStackLayout>
 </ContentPage>

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExploracionPaquetes.Src.Design.Views.AddReminder"
+             Title="AddReminder">
+    <ScrollView Margin="8">
+        <VerticalStackLayout >
+            <Grid ColumnDefinitions="*,Auto"
+                  Margin="0,0,0,10">
+                <Label Text="Crear nuevo recordatorio"
+                       FontSize="Title"/>
+                <Image Grid.Column="1">
+                    <Image.Source>
+                        <FontImageSource Glyph="&#xf298;"
+                                         Color="Black"
+                                         FontFamily="FABR"/>
+                    </Image.Source>
+                </Image>
+            </Grid>
+            <Label Text="Nombre del Recordatorio"/>
+            <Entry Placeholder="Ingresa el nombre"
+                   x:Name="EntryNameReminder"
+                   Margin="0,0,0,8"/>
+            <Label Text="Ingresa la descirpción del recordatorio"/>
+            <Editor Placeholder="Ingresa la descripción"
+                    x:Name="EditorDescriptionReminder"
+                    FontAutoScalingEnabled="True"
+                    AutoSize="TextChanges"
+                   Margin="0,0,0,8"/>
+            <Label Text="Ingresa la Fecha y Hora"/>
+            <Grid ColumnDefinitions="*,*"
+                  Margin="0,0,0,8">
+                <VerticalStackLayout>
+                    <Label Text="Fecha"/>
+                    <DatePicker x:Name="DateReminder"/>
+                </VerticalStackLayout>
+                <VerticalStackLayout Grid.Column="1">
+                    <Label Text="Hora"/>
+                    <TimePicker x:Name="TimeReminder"/>
+                </VerticalStackLayout>
+            </Grid>            
+            <Button Text="Crear Recordatorio"
+                    x:Name="BtnCreateReminder"
+                    Clicked="BtnCreateReminder_Clicked"/>           
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

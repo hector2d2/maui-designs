@@ -18,10 +18,22 @@ namespace ExploracionPaquetes.Src.Security.ViewModel
 			Application.Current.MainPage.Navigation.PushAsync(new FingerPrintView());
 		}
 
+		[RelayCommand]
+		void GoToCamera()
+		{
+			Application.Current.MainPage.Navigation.PushAsync(new CameraView());
+		}
+
         [RelayCommand]
-        void GoToCamera()
+        void GoToInvoqueNativeCode()
         {
-            Application.Current.MainPage.Navigation.PushAsync(new CameraView());
+            Application.Current.MainPage.Navigation.PushAsync(new InvoqueNativeCodeView());
+        }
+
+        [RelayCommand]
+        void GoToAlert()
+        {
+            Application.Current.MainPage.Navigation.PushAsync(new AlertView());
         }
     }
 }

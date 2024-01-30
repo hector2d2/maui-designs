@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExploracionPaquetes.Src.Design.Views.CalendarV2"
+             Title="CalendarV2">
+    <Grid>
+        <Grid x:Name="MenuDrawer"
+              HorizontalOptions="Start"
+              BackgroundColor="Black">
+            <Grid RowDefinitions="Auto,*">
+                <VerticalStackLayout HorizontalOptions="Center">
+                    <Frame BackgroundColor="Gray"
+                           Margin="4">
+                        <Label Text="A"
+                               TextColor="White"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                    </Frame>
+                </VerticalStackLayout>
+                <VerticalStackLayout VerticalOptions="Center"
+                                     Grid.Row="1"
+                                     HorizontalOptions="Center">
+                    <Frame BackgroundColor="Gray"
+                           Margin="0,4">
+                        <Label Text="L"
+                               TextColor="White"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                    </Frame>
+                    <Frame BackgroundColor="Gray"
+                           Margin="0,4">
+                        <Label Text="M"
+                               TextColor="White"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                    </Frame>
+                    <Frame BackgroundColor="Gold"
+                           Margin="0,4">
+                        <Label Text="M"
+                               TextColor="Gray"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                    </Frame>
+                    <Frame BackgroundColor="Gray"
+                           Margin="0,4">
+                        <Label Text="J"
+                               TextColor="White"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                    </Frame>
+                    <Frame BackgroundColor="Gray"
+                           Margin="0,4">
+                        <Label Text="V"
+                               TextColor="White"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                    </Frame>
+                    <Frame BackgroundColor="Gray"
+                           Margin="0,4">
+                        <Label Text="S"
+                               TextColor="White"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                    </Frame>
+                    <Frame BackgroundColor="Gray"
+                           Margin="0,4">
+                        <Label Text="D"
+                               TextColor="White"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                    </Frame>
+                </VerticalStackLayout>
+            </Grid>
+        </Grid>
+        <Grid x:Name="Menucontent"
+              HorizontalOptions="End"
+              BackgroundColor="White">
+            <VerticalStackLayout>
+                <HorizontalStackLayout HorizontalOptions="End">
+                    <VerticalStackLayout>
+                        <Label Text="Miercoles"/>
+                        <Label Text="Jun 2023"/>
+                    </VerticalStackLayout>
+                    <Label Text="28"/>
+                </HorizontalStackLayout>
+                <Label Text="Tareas"
+                       HorizontalOptions="End"
+                       Margin="0,8,15,0"
+                       FontSize="Title"/>
+                <Grid ColumnDefinitions="Auto,*">
+                    <Label Text="16:39"
+                           Margin="8,0,0,0"
+                           VerticalOptions="Center"/>                    
+                    <Frame BackgroundColor="AliceBlue"
+                           Margin="10"
+                           Grid.Column="1"
+                           HeightRequest="180">
+                        <VerticalStackLayout>
+                            <Label Text="Proyecto 360"/>
+                            <Label Text="Descripcion"/>
+                        </VerticalStackLayout>
+                    </Frame>                    
+                </Grid>
+                <Grid ColumnDefinitions="Auto,*">
+                    <Label Text="16:39"
+                           Margin="8,0,0,0"
+                           VerticalOptions="Center"/>                    
+                    <Frame BackgroundColor="GreenYellow"
+                           Margin="10"
+                           Grid.Column="1"
+                           HeightRequest="180">
+                        <VerticalStackLayout>
+                            <Label Text="Proyecto 360"/>
+                            <Label Text="Descripcion"/>
+                        </VerticalStackLayout>
+                    </Frame>                    
+                </Grid>
+                <Grid ColumnDefinitions="Auto,*">
+                    <Label Text="16:39"
+                           Margin="8,0,0,0"
+                           VerticalOptions="Center"/>                    
+                    <Frame BackgroundColor="Aqua"
+                           Margin="10"
+                           Grid.Column="1"
+                           HeightRequest="180">
+                        <VerticalStackLayout>
+                            <Label Text="Proyecto 360"/>
+                            <Label Text="Descripcion"/>
+                        </VerticalStackLayout>
+                    </Frame>                    
+                </Grid>
+            </VerticalStackLayout>
+        </Grid>
+    </Grid>
+</ContentPage>

@@ -7,9 +7,9 @@
       <dSYMSourcePathExists>false</dSYMSourcePathExists>
       <NoSymbolStrip>true</NoSymbolStrip>
       <dSYMInfoPlistRelativePath>ExploracionPaquetes.app.dSYM\Contents\Info.plist</dSYMInfoPlistRelativePath>
-      <SymbolFile>/Users/sanbornhermanos/Projects/ExploracionPaquetes/ExploracionPaquetes/obj/Debug/net7.0-ios/iossimulator-x64/mtouch-symbols.list</SymbolFile>
+      <SymbolFile>/Users/sanbornhermanos/Desktop/Maui/ExploracionPaquetes/ExploracionPaquetes/obj/Debug/net7.0-ios/iossimulator-x64/mtouch-symbols.list</SymbolFile>
       <DSymName>ExploracionPaquetes.app.dSYM</DSymName>
-      <SourceProjectPath>/Users/sanbornhermanos/Projects/ExploracionPaquetes/ExploracionPaquetes</SourceProjectPath>
+      <SourceProjectPath>/Users/sanbornhermanos/Desktop/Maui/ExploracionPaquetes/ExploracionPaquetes</SourceProjectPath>
     </_PostProcessingItem>
   </ItemGroup>
 </Project>

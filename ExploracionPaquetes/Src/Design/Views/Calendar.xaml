@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExploracionPaquetes.Src.Design.Views.Calendar"
+             Title="Calendar">
+    <Grid>
+        <VerticalStackLayout Margin="0,8">
+            <HorizontalStackLayout HorizontalOptions="Center">
+                <Button Text="Atras"
+                        x:Name="BtnMonthBefore"
+                        Clicked="BtnMonthBefore_Clicked"/>
+                <Label x:Name="TxtNameMonth"
+                       VerticalOptions="Center"
+                       Margin="8,0"/>
+                <Button Text="Adelante"
+                        Clicked="BtnMonthAfter_Clicked"
+                        x:Name="BtnMonthAfter"/>
+            </HorizontalStackLayout>
+            <Grid ColumnDefinitions=".14*,.14*,.14*,.14*,.14*,.14*,.14*">            
+                <Label Text="D"
+                        HorizontalOptions="Center"/>
+                <Label Text="L"
+                        HorizontalOptions="Center"
+                        Grid.Column="1"/>
+                <Label Text="M"
+                        HorizontalOptions="Center"
+                        Grid.Column="2"/>
+                <Label Text="M"
+                        HorizontalOptions="Center"
+                        Grid.Column="3"/>
+                <Label Text="J"
+                        HorizontalOptions="Center"
+                        Grid.Column="4"/>
+                <Label Text="V"
+                        HorizontalOptions="Center"
+                        Grid.Column="5"/>
+                <Label Text="S"
+                        HorizontalOptions="Center"
+                        Grid.Column="6"/>
+            </Grid>
+            <CollectionView ItemsSource="{Binding Numbersday}">            
+                 <CollectionView.ItemsLayout>
+                     <GridItemsLayout Span="7" 
+                                      Orientation="Vertical"/>
+                 </CollectionView.ItemsLayout>
+                 <CollectionView.ItemTemplate>
+                     <DataTemplate>
+                        <Grid Margin="0,8">
+                            <Grid.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="ContainerDay_Tapped"
+                                                      x:Name="ContainerDay"/>
+                            </Grid.GestureRecognizers>
+                            <Label Text="{Binding .}"
+                                   HorizontalOptions="Center"
+                                   Margin="8"
+                                   VerticalOptions="Center"/>
+                        </Grid>
+                     </DataTemplate>
+                 </CollectionView.ItemTemplate>
+            </CollectionView>
+        </VerticalStackLayout>
+        <Grid x:Name="BStasks"
+              IsVisible="false"
+              RowDefinitions="Auto,*"
+              VerticalOptions="End"
+              BackgroundColor="White">
+            <Button Text="Bajar"
+                    IsVisible="false"
+                    Clicked="BStasksDown_Clicked"
+                    x:Name="BStasksDown"/>
+            <Button Text="Subir"
+                    Clicked="BStasksUp_Clicked"
+                    x:Name="BStasksUp"/>
+            <Border Grid.Row="1"
+                    Padding="24,24,24,0"
+                    Margin="-1"
+                    BackgroundColor="White"
+                    VerticalOptions="Fill"
+                    HorizontalOptions="Fill"
+                    StrokeThickness="0">
+                 <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="32,32,0,0"/>
+                </Border.StrokeShape>
+                <ScrollView>
+                    <VerticalStackLayout>
+                        <Frame BackgroundColor="AliceBlue"
+                               Margin="0,8"
+                                HeightRequest="180">
+                            <Label Text="Tarea 1"/>
+                        </Frame>
+                        <Frame BackgroundColor="AliceBlue"
+                               Margin="0,8"
+                                HeightRequest="180">
+                            <Label Text="Tarea 1"/>
+                        </Frame>
+                    </VerticalStackLayout>
+                </ScrollView>
+            </Border>            
+        </Grid>
+    </Grid>
+</ContentPage>

@@ -33,6 +33,10 @@
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-ios|AnyCPU'">
 	  <CreatePackage>false</CreatePackage>
 	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-ios|AnyCPU'">
+	  <CreatePackage>false</CreatePackage>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-android|AnyCPU'" />
 	<ItemGroup>
 		<!-- App Icon -->
 		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
@@ -56,10 +60,16 @@
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
-		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.0" />
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.1" />
 		<PackageReference Include="Plugin.Fingerprint" Version="3.0.0-beta.1" />
 		<PackageReference Include="SkiaSharp.Extended.UI.Maui" Version="2.0.0-preview.61" />
 		<PackageReference Include="Camera.MAUI" Version="1.4.4" />
+		<PackageReference Condition="'$(TargetFramework)' == 'net7.0-ios' OR '$(TargetFramework)' == 'net7.0-android'" Include="Plugin.Firebase" Version="2.0.4" />
+		<PackageReference Include="Plugin.Firebase.Auth" Version="2.0.3" />
+		<PackageReference Include="FirebaseAuthentication.net" Version="4.0.2" />
+		<PackageReference Include="IdentityModel.OidcClient" Version="5.2.1" />
+		<PackageReference Include="Microsoft.Maui.Controls.Maps" Version="7.0.92" />
+		<PackageReference Include="Plugin.LocalNotification" Version="10.1.8" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -79,6 +89,20 @@
 	  <None Remove="Resources\gifs\duck.gif" />
 	  <None Remove="Src\Design\Models\" />
 	  <None Remove="Src\Templates\" />
+	  <None Remove="Src\Templates\SignIn\" />
+	  <None Remove="Src\Templates\SignIn\Views\" />
+	  <None Remove="Src\Templates\SignIn\ViewModel\" />
+	  <None Remove="Platforms\Android\google-services.json" />
+	  <None Remove="Src\Templates\ListTodo\" />
+	  <None Remove="Src\Templates\ListTodo\Views\" />
+	  <None Remove="Src\Templates\ListTodo\ViewModel\" />
+	  <None Remove="Src\Templates\ListTodo\Models\" />
+	  <None Remove="Src\CustomControllers\" />
+	  <None Remove="Resources\Fonts\FontAwesomeBrands-Regular-400.otf" />
+	  <None Remove="Resources\Fonts\FontAwesomeFree-Regular-400.otf" />
+	  <None Remove="Resources\Fonts\FontAwesomeFree-Solid-900.otf" />
+	  <None Remove="Src\Security\Services\" />
+	  <None Remove="Src\Security\Interfaces\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Src\Home\" />
@@ -94,8 +118,24 @@
 	  <Folder Include="Resources\gifs\" />
 	  <Folder Include="Src\Design\Models\" />
 	  <Folder Include="Src\Templates\" />
+	  <Folder Include="Src\Templates\SignIn\" />
+	  <Folder Include="Src\Templates\SignIn\Views\" />
+	  <Folder Include="Src\Templates\SignIn\ViewModel\" />
+	  <Folder Include="Src\Templates\ListTodo\" />
+	  <Folder Include="Src\Templates\ListTodo\Views\" />
+	  <Folder Include="Src\Templates\ListTodo\ViewModel\" />
+	  <Folder Include="Src\Templates\ListTodo\Models\" />
+	  <Folder Include="Src\CustomControllers\" />
+	  <Folder Include="Src\Security\Services\" />
+	  <Folder Include="Src\Security\Interfaces\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <MauiAsset Remove="Resources\Raw\action-completed.json" />
+	</ItemGroup>
+	<ItemGroup Condition="'$(TargetFramework)' == 'net7.0-ios'">
+	  <BundleResource Include="GoogleService-Info.plist" Link="GoogleService-Info.plist" />
+	</ItemGroup>
+	<ItemGroup>
+	  <BundleResource Include="Platforms\Android\google-services.json" />
 	</ItemGroup>
 </Project>

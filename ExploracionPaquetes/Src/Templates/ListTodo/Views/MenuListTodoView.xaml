@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExploracionPaquetes.Src.Templates.ListTodo.Views.MenuListTodoView"
+             Title="MenuListTodoView">
+    <Grid>        
+        <Grid RowDefinitions="Auto,*"
+              Margin="8">
+            <HorizontalStackLayout>
+                <Image>
+                    <Image.Source>
+                        <FontImageSource Glyph="&#xf0c9;"
+                                            FontFamily="FAS"
+                                            Color="Black"/>
+                    </Image.Source>
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="ImgDrawer"
+                                                Tapped="ImgDrawer_Tapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Label Margin="8,0"
+                       Text="Seleccionar Mapeo"
+                       x:Name="TxtTitle"
+                       VerticalOptions="Center"/>                
+            </HorizontalStackLayout>
+
+            <VerticalStackLayout Grid.Row="1"
+                                 x:Name="ContentSelectMap">
+                <Label Text="Seleccionar"/>
+                <Button Text="Ir a la lista"
+                        Command="{Binding GoToListToDoCommand}"/>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout Grid.Row="1"
+                                 IsVisible="false"
+                                 x:Name="ContentDoMap">
+                <Label Text="Ir al mapeo"/>
+                <Button Text="Ir a la lista"
+                        Command="{Binding GoToListToDoCommand}"/>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout Grid.Row="1"
+                                 IsVisible="false"
+                                 x:Name="ContentWatchAdvanceUnit">
+                <Label Text="Lista de avance de unidad"/>
+                <Button Text="Ir a la lista"
+                        Command="{Binding GoToListToDoCommand}"/>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout Grid.Row="1"
+                                 IsVisible="false"
+                                 x:Name="ContentListEvidenceUnits">
+                <Label Text="Evidencia de unidades"/>
+                <Button Text="Ir a la lista"
+                        Command="{Binding GoToListToDoCommand}"/>
+            </VerticalStackLayout>
+        </Grid>
+
+        <Grid IsVisible="false"
+              x:Name="MenuContainer"
+              ColumnDefinitions="*,Auto"
+              BackgroundColor="#DDCCCCCC">
+            <Grid.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OutsideDrawer_Tapped"
+                                      x:Name="OutsideDrawer"/>
+            </Grid.GestureRecognizers>
+            <VerticalStackLayout x:Name="MenuContent"
+                                 HorizontalOptions="Start"                                 
+                                 BackgroundColor="White">
+                <ScrollView>
+                    <VerticalStackLayout>
+                        <VerticalStackLayout Margin="8">
+                            <Label Text="Bienvenido"/>
+                            <Label Text="Hector Ricardo Tristan Mendez"/>
+                            <Label Text="5788022"/>
+                        </VerticalStackLayout>
+                        <HorizontalStackLayout BackgroundColor="Red"
+                                               x:Name="HstackSelectMap">
+                            <HorizontalStackLayout.GestureRecognizers>
+                                <TapGestureRecognizer x:Name="BtnSelectMap"
+                                                      Tapped="BtnSelectMap_Tapped"/>
+                            </HorizontalStackLayout.GestureRecognizers>
+                            <Label Text="Seleccionar Mapeo"
+                                   x:Name="TxtTitleSelectMap"
+                                   TextColor="White"
+                                   Margin="8"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout x:Name="HstackDoMap">
+                            <HorizontalStackLayout.GestureRecognizers>
+                                <TapGestureRecognizer x:Name="BtnDoMap"
+                                                      Tapped="BtnDoMap_Tapped"/>
+                            </HorizontalStackLayout.GestureRecognizers>
+                            <Label Text="Realizar Mapeo"
+                                   x:Name="TxtDoMap"
+                                   Margin="8"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout x:Name="HstackWatchAdvanceUnit">
+                            <HorizontalStackLayout.GestureRecognizers>
+                                <TapGestureRecognizer x:Name="BtnWatchAdvanceUnit"
+                                                      Tapped="BtnWatchAdvanceUnit_Tapped"/>
+                            </HorizontalStackLayout.GestureRecognizers>
+                            <Label Text="Visualizar Avance de unidad"
+                                   x:Name="TxtWatchAdvanceUnit"
+                                   Margin="8"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout x:Name="HstackListEvidenceUnits">
+                            <HorizontalStackLayout.GestureRecognizers>
+                                <TapGestureRecognizer x:Name="BtnListEvidenceUnits"
+                                                      Tapped="BtnListEvidenceUnits_Tapped"/>
+                            </HorizontalStackLayout.GestureRecognizers>
+                            <Label Text="Listado de evidencia de unidades"
+                                   x:Name="TxtListEvidenceUnits"
+                                   Margin="8"/>
+                        </HorizontalStackLayout>
+                    </VerticalStackLayout>
+                </ScrollView>
+            </VerticalStackLayout>
+        </Grid>
+    </Grid>
+</ContentPage>

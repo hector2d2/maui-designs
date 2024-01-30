@@ -1,4 +1,80 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <ItemGroup />
+  <ItemGroup>
+    <_BindingLibraryFrameworks Include="Security">
+      <Assembly>Firebase.ABTesting</Assembly>
+    </_BindingLibraryFrameworks>
+    <_BindingLibraryFrameworks Include="SystemConfiguration">
+      <Assembly>Firebase.ABTesting</Assembly>
+    </_BindingLibraryFrameworks>
+    <_BindingLibraryFrameworks Include="MobileCoreServices">
+      <Assembly>Firebase.CloudFirestore</Assembly>
+    </_BindingLibraryFrameworks>
+    <_BindingLibraryFrameworks Include="SystemConfiguration">
+      <Assembly>Firebase.CloudFirestore</Assembly>
+    </_BindingLibraryFrameworks>
+    <_BindingLibraryFrameworks Include="SystemConfiguration">
+      <Assembly>Firebase.CloudMessaging</Assembly>
+    </_BindingLibraryFrameworks>
+    <_BindingLibraryFrameworks Include="UserNotifications">
+      <IsWeak>true </IsWeak>
+      <Assembly>Firebase.CloudMessaging</Assembly>
+    </_BindingLibraryFrameworks>
+    <_BindingLibraryFrameworks Include="Foundation">
+      <Assembly>Firebase.Core</Assembly>
+    </_BindingLibraryFrameworks>
+    <_BindingLibraryFrameworks Include="UIKit">
+      <Assembly>Firebase.Core</Assembly>
+    </_BindingLibraryFrameworks>
+    <_BindingLibraryFrameworks Include="SystemConfiguration">
+      <Assembly>Firebase.Core</Assembly>
+    </_BindingLibraryFrameworks>
+    <_BindingLibraryFrameworks Include="CoreTelephony">
+      <Assembly>Firebase.Core</Assembly>
+    </_BindingLibraryFrameworks>
+    <_BindingLibraryFrameworks Include="Security">
+      <Assembly>Firebase.Core</Assembly>
+    </_BindingLibraryFrameworks>
+    <_BindingLibraryFrameworks Include="Security">
+      <Assembly>Firebase.Crashlytics</Assembly>
+    </_BindingLibraryFrameworks>
+    <_BindingLibraryFrameworks Include="SystemConfiguration">
+      <Assembly>Firebase.Crashlytics</Assembly>
+    </_BindingLibraryFrameworks>
+    <_BindingLibraryFrameworks Include="QuartzCore">
+      <Assembly>Firebase.DynamicLinks</Assembly>
+    </_BindingLibraryFrameworks>
+    <_BindingLibraryFrameworks Include="WebKit">
+      <IsWeak>true </IsWeak>
+      <Assembly>Firebase.DynamicLinks</Assembly>
+    </_BindingLibraryFrameworks>
+    <_BindingLibraryFrameworks Include="Security">
+      <Assembly>Firebase.Installations</Assembly>
+    </_BindingLibraryFrameworks>
+    <_BindingLibraryFrameworks Include="Security">
+      <Assembly>Firebase.RemoteConfig</Assembly>
+    </_BindingLibraryFrameworks>
+    <_BindingLibraryFrameworks Include="StoreKit">
+      <Assembly>Firebase.RemoteConfig</Assembly>
+    </_BindingLibraryFrameworks>
+    <_BindingLibraryFrameworks Include="SystemConfiguration">
+      <Assembly>Firebase.RemoteConfig</Assembly>
+    </_BindingLibraryFrameworks>
+    <_BindingLibraryFrameworks Include="MobileCoreServices">
+      <Assembly>Firebase.Storage</Assembly>
+    </_BindingLibraryFrameworks>
+    <_BindingLibraryFrameworks Include="SafariServices">
+      <Assembly>Google.SignIn</Assembly>
+    </_BindingLibraryFrameworks>
+    <_BindingLibraryFrameworks Include="Security">
+      <Assembly>Google.SignIn</Assembly>
+    </_BindingLibraryFrameworks>
+    <_BindingLibraryFrameworks Include="SystemConfiguration">
+      <Assembly>Google.SignIn</Assembly>
+    </_BindingLibraryFrameworks>
+    <_BindingLibraryFrameworks Include="AuthenticationServices">
+      <IsWeak>true </IsWeak>
+      <Assembly>Google.SignIn</Assembly>
+    </_BindingLibraryFrameworks>
+  </ItemGroup>
 </Project>

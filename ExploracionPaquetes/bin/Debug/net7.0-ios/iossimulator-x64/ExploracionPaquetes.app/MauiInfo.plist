@@ -4,6 +4,9 @@
 <dict>
   <key>UIAppFonts</key>
   <array>
+	<string>FontAwesomeBrands-Regular-400.otf</string>
+	<string>FontAwesomeFree-Regular-400.otf</string>
+	<string>FontAwesomeFree-Solid-900.otf</string>
 	<string>OpenSans-Regular.ttf</string>
 	<string>OpenSans-Semibold.ttf</string>
   </array>

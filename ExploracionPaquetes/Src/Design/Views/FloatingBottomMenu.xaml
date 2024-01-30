@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:customController="clr-namespace:ExploracionPaquetes.Src.CustomControllers"
+             x:Class="ExploracionPaquetes.Src.Design.Views.FloatingBottomMenu"             
+             Title="Mis Reuniones">
+    <Grid>
+        <Label x:Name="ContentInit"
+            Text="Inicio"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Grid IsVisible="false"
+              RowDefinitions="Auto,*"
+              x:Name="ContentEvent">
+            <Frame BackgroundColor="Black"
+                   HorizontalOptions="End"
+                   Margin="4"
+                   Padding="8"
+                   VerticalOptions="Start">
+                <HorizontalStackLayout>
+                    <Image Margin="8,0">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer x:Name="ControlMenu"
+                                                  Tapped="ControlMenu_Tapped"/>
+                        </Image.GestureRecognizers>
+                        <Image.Source>
+                            <FontImageSource Glyph="&#xf070;"
+                                             x:Name="ImgControlMenu"
+                                             FontFamily="FAS"
+                                             Color="White"/>
+                        </Image.Source>
+                    </Image>
+                    <Image Margin="8,0">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer x:Name="ImgCreateMeeting"
+                                                  Tapped="ImgCreateMeeting_Tapped"/>
+                        </Image.GestureRecognizers>
+                        <Image.Source>
+                            <FontImageSource Glyph="&#xf055;"                                             
+                                             FontFamily="FAS"
+                                             Color="White"/>
+                        </Image.Source>
+                    </Image>
+                </HorizontalStackLayout>
+            </Frame>
+            <ScrollView Grid.Row="1">
+                <VerticalStackLayout>                    
+                    <Grid ColumnDefinitions="10,*"
+                          Margin="8">
+                        <VerticalStackLayout BackgroundColor="Red">
+                        </VerticalStackLayout>
+                        <Frame Grid.Column="1">
+                            <VerticalStackLayout>
+                                <HorizontalStackLayout>
+                                    <Label Text="Hector Ricardo Tristan Mendez"/>
+                                </HorizontalStackLayout>
+                                <Label Text="Esta es una breve descripcion de la reunion."
+                                       Margin="0,10"/>
+                                <HorizontalStackLayout Margin="0,0,0,8">
+                                    <Label Text="10:00 am"
+                                           Margin="0,0,10,0"/>
+                                    <Label Text="02:00 pm"/>
+                                </HorizontalStackLayout>
+                                <Frame>
+                                    <Label Text="Ir a la reunion"/>
+                                </Frame>
+                            </VerticalStackLayout>
+                        </Frame>
+                    </Grid>
+                    <Grid ColumnDefinitions="10,*"
+                          Margin="8">
+                        <VerticalStackLayout BackgroundColor="Red">
+                        </VerticalStackLayout>
+                        <Frame Grid.Column="1">
+                            <VerticalStackLayout>
+                                <HorizontalStackLayout>
+                                    <Label Text="Hector Ricardo Tristan Mendez"/>
+                                </HorizontalStackLayout>
+                                <Label Text="Esta es una breve descripcion de la reunion."
+                                       Margin="0,10"/>
+                                <HorizontalStackLayout>
+                                    <Label Text="10:00 am"
+                                           Margin="0,0,10,0"/>
+                                    <Label Text="02:00 pm"/>
+                                </HorizontalStackLayout>
+                                <Frame>
+                                    <Label Text="Ir a la reunion"/>
+                                </Frame>
+                            </VerticalStackLayout>
+                        </Frame>
+                    </Grid>
+                    <Grid ColumnDefinitions="10,*"
+                          Margin="8">
+                        <VerticalStackLayout BackgroundColor="Red">
+                        </VerticalStackLayout>
+                        <Frame Grid.Column="1">
+                            <VerticalStackLayout>
+                                <HorizontalStackLayout>
+                                    <Label Text="Foto"/>
+                                    <Label Text="Hector Ricardo Tristan Mendez"/>
+                                </HorizontalStackLayout>
+                                <Label Text="Esta es una breve descripcion de la reunion."
+                                       Margin="0,10"/>
+                                <HorizontalStackLayout>
+                                    <Label Text="10:00 am"
+                                           Margin="0,0,10,0"/>
+                                    <Label Text="02:00 pm"/>
+                                </HorizontalStackLayout>
+                                <Frame>
+                                    <Label Text="Ir a la reunion"/>
+                                </Frame>
+                            </VerticalStackLayout>
+                        </Frame>
+                    </Grid>
+                    <Grid ColumnDefinitions="10,*"
+                          Margin="8">
+                        <VerticalStackLayout BackgroundColor="Red">
+                        </VerticalStackLayout>
+                        <Frame Grid.Column="1">
+                            <VerticalStackLayout>
+                                <HorizontalStackLayout>
+                                    <Label Text="Foto"/>
+                                    <Label Text="Hector Ricardo Tristan Mendez"/>
+                                </HorizontalStackLayout>
+                                <Label Text="Esta es una breve descripcion de la reunion."/>
+                                <HorizontalStackLayout>
+                                    <Label Text="10:00 am"/>
+                                    <Label Text="02:00 pm"/>
+                                </HorizontalStackLayout>
+                                <Frame>
+                                    <Label Text="Ir a la reunion"/>
+                                </Frame>
+                            </VerticalStackLayout>
+                        </Frame>
+                    </Grid>
+                    <Grid ColumnDefinitions="10,*"
+                          Margin="8">
+                        <VerticalStackLayout BackgroundColor="Red">
+                        </VerticalStackLayout>
+                        <Frame Grid.Column="1">
+                            <VerticalStackLayout>
+                                <HorizontalStackLayout>
+                                    <Label Text="Foto"/>
+                                    <Label Text="Hector Ricardo Tristan Mendez"/>
+                                </HorizontalStackLayout>
+                                <Label Text="Esta es una breve descripcion de la reunion."/>
+                                <HorizontalStackLayout>
+                                    <Label Text="10:00 am"/>
+                                    <Label Text="02:00 pm"/>
+                                </HorizontalStackLayout>
+                                <Frame>
+                                    <Label Text="Ir a la reunion"/>
+                                </Frame>
+                            </VerticalStackLayout>
+                        </Frame>
+                    </Grid>
+                    <VerticalStackLayout HeightRequest="180"/>
+                </VerticalStackLayout>
+            </ScrollView>            
+        </Grid>
+        <Label IsVisible="false"
+               x:Name="ContentFav"
+            Text="Favoritos"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Frame x:Name="MenuBottom"
+               VerticalOptions="End"
+               CornerRadius="25"
+               Margin="30"
+               BackgroundColor="Black">
+            <Grid ColumnDefinitions="*,*,*">
+                <VerticalStackLayout HorizontalOptions="Center">
+                    <VerticalStackLayout.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="MenuInit"
+                                              Tapped="MenuInit_Tapped"/>
+                    </VerticalStackLayout.GestureRecognizers>
+                    <Image>
+                        <Image.Source>
+                            <FontImageSource Glyph="&#xf015;"
+                                             x:Name="ImgMenuInit"
+                                             Color="Gold"
+                                             FontFamily="FAS"/>
+                        </Image.Source>
+                    </Image>  
+                    <Label Text="Inicio"
+                           x:Name="TxtMenuInit"
+                           TextColor="Gold"/>
+                </VerticalStackLayout>
+                <VerticalStackLayout Grid.Column="1"
+                                     HorizontalOptions="Center">
+                    <VerticalStackLayout.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="MenuEvent"
+                                              Tapped="MenuEvent_Tapped"/>
+                    </VerticalStackLayout.GestureRecognizers>
+                    <Image>
+                        <Image.Source>
+                            <FontImageSource Glyph="&#xf133;"
+                                             x:Name="ImgMenuEvent"
+                                             FontFamily="FAS"/>
+                        </Image.Source>
+                    </Image>  
+                    <Label Text="Reunion"
+                           x:Name="TxtMenuEvent"
+                           TextColor="White"/>
+                </VerticalStackLayout>
+                <VerticalStackLayout Grid.Column="2"
+                                     HorizontalOptions="Center">
+                    <VerticalStackLayout.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="MenuFav"
+                                              Tapped="MenuFav_Tapped"/>
+                    </VerticalStackLayout.GestureRecognizers>
+                    <Image>
+                        <Image.Source>
+                            <FontImageSource Glyph="&#xf004;"
+                                             x:Name="ImgMenuFav"
+                                             FontFamily="FAS"/>
+                        </Image.Source>
+                    </Image>  
+                    <Label Text="Favoritos"
+                           x:Name="TxtMenuFav"
+                           TextColor="White"/>
+                </VerticalStackLayout>
+            </Grid>
+        </Frame>
+        <customController:CustomBottomSheet x:Name="BScreateMeeting">
+            <customController:CustomBottomSheet.BottomSheetContent>
+                <ScrollView>
+                    <Grid RowDefinitions="Auto,Auto,Auto,Auto,*,Auto"
+                          Margin="0,8">
+                        <Entry Placeholder="Ingresa el nombre de la reunion"
+                               FontAutoScalingEnabled="True"/>
+                        <Label Text="Invita a las personas"
+                               Grid.Row="1"/>
+                        <ScrollView Orientation="Horizontal"
+                                    Grid.Row="2">
+                            <HorizontalStackLayout>
+                                <Grid Margin="0,0,4,0">
+                                    <Frame CornerRadius="30"
+                                           BackgroundColor="Blue"
+                                           HeightRequest="60"
+                                           WidthRequest="60">
+                                    </Frame>
+                                    <Image HorizontalOptions="End"
+                                           VerticalOptions="End">
+                                        <Image.Source>
+                                            <FontImageSource Glyph="&#xf055;"
+                                                             Color="Gray"
+                                                             FontFamily="FAS"/>
+                                        </Image.Source>
+                                    </Image> 
+                                </Grid>
+                                <Frame CornerRadius="30"
+                                       Margin="4,0"
+                                        BackgroundColor="Blue"
+                                        HeightRequest="60"
+                                        WidthRequest="60">
+                                </Frame>
+                                <Frame CornerRadius="30"
+                                       Margin="4,0"
+                                        BackgroundColor="Blue"
+                                        HeightRequest="60"
+                                        WidthRequest="60">
+                                </Frame>
+                                <Frame CornerRadius="30"
+                                       Margin="8,0"
+                                        BackgroundColor="Blue"
+                                        HeightRequest="60"
+                                        WidthRequest="60">
+                                </Frame>
+                                <Frame CornerRadius="30"
+                                       Margin="8,0"
+                                        BackgroundColor="Blue"
+                                        HeightRequest="60"
+                                        WidthRequest="60">
+                                </Frame>
+                                <Frame CornerRadius="30"
+                                       Margin="8,0"
+                                        BackgroundColor="Blue"
+                                        HeightRequest="60"
+                                        WidthRequest="60">
+                                </Frame>
+                            </HorizontalStackLayout>
+                        </ScrollView>
+                        <HorizontalStackLayout Grid.Row="3">
+                            <VerticalStackLayout>
+                                <Label Text="Inicio"/>
+                                <HorizontalStackLayout>
+                                    <DatePicker/>
+                                    <TimePicker/>
+                                </HorizontalStackLayout>
+                            </VerticalStackLayout>
+                            <VerticalStackLayout Margin="8,0,0,0">
+                                <Label Text="Final"/>
+                                <HorizontalStackLayout>
+                                    <DatePicker/>
+                                    <TimePicker/>
+                                </HorizontalStackLayout>
+                            </VerticalStackLayout>
+                        </HorizontalStackLayout>                        
+                        <Editor Placeholder="Ingresa la descripción de la reunion"
+                                VerticalOptions="FillAndExpand"
+                                VerticalTextAlignment="Start"
+					            AutoSize="TextChanges"
+                                Grid.Row="4"/>                        
+                        <Button Text="Crear Reunion"
+                                Grid.Row="5"/>
+                    </Grid>
+                </ScrollView>
+            </customController:CustomBottomSheet.BottomSheetContent>
+        </customController:CustomBottomSheet>
+    </Grid>
+</ContentPage>

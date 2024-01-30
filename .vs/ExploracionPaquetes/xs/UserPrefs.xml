@@ -1,27 +1,48 @@
 ﻿<Properties NuGet.AddPackagesDialog.IncludePrerelease="True" StartupConfiguration="{E57D1727-E743-4EF7-9C20-F605C9AACBF8}|Default">
-  <MonoDevelop.MonoDroid LastDeploySdkVersion="33.0.68" />
-  <MultiItemStartupConfigurations />
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.tablet_h-dpi_13_5in_-_api_33" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.ExploracionPaquetes Xamarin.HotReload.DebuggerTimeoutException.ExploracionPaquetes.HideInfoBar="True" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.85E152DF-9490-4D02-B36A-8A168BDE655F" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/sanbornhermanos/Desktop/Maui/ExploracionPaquetes/ExploracionPaquetes/Src/Templates/SignIn/ViewModel/VMsignIn.cs" relfile="ExploracionPaquetes/Src/Templates/SignIn/ViewModel/VMsignIn.cs" line="26" column="1" />
+      <Breakpoint file="/Users/sanbornhermanos/Desktop/Maui/ExploracionPaquetes/ExploracionPaquetes/Src/Templates/SignIn/ViewModel/VMsignIn.cs" relfile="ExploracionPaquetes/Src/Templates/SignIn/ViewModel/VMsignIn.cs" line="25" column="1" />
+      <Breakpoint file="/Users/sanbornhermanos/Desktop/Maui/ExploracionPaquetes/ExploracionPaquetes/Src/Design/Views/RemindersView.xaml.cs" relfile="ExploracionPaquetes/Src/Design/Views/RemindersView.xaml.cs" line="1" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.85E152DF-9490-4D02-B36A-8A168BDE655F" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ExploracionPaquetes/Src/Design/Views/RemindersView.xaml.cs">
+    <Files>
+      <File FileName="ExploracionPaquetes/Src/Design/Views/RemindersView.xaml" Line="27" Column="83" />
+      <File FileName="ExploracionPaquetes/Src/Design/Views/RemindersView.xaml.cs" Line="60" Column="38" />
+      <File FileName="ExploracionPaquetes/Src/Design/Views/AddReminder.xaml" Line="1" Column="1" />
+      <File FileName="ExploracionPaquetes/Src/Design/Views/AddReminder.xaml.cs" Line="52" Column="56" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ExploracionPaquetes" expanded="True">
-            <Node name="ExploracionPaquetes" expanded="True">
-              <Node name="Src" expanded="True" />
+            <Node name="ExploracionPaquetes">
+              <Node name="Src" expanded="True">
+                <Node name="Design" expanded="True">
+                  <Node name="Views" expanded="True">
+                    <Node name="AddReminder.xaml" expanded="True" />
+                    <Node name="RemindersView.xaml" expanded="True">
+                      <Node name="RemindersView.xaml.cs" selected="True" />
+                    </Node>
+                  </Node>
+                </Node>
+                <Node name="Security" expanded="True">
+                  <Node name="Views" expanded="True">
+                    <Node name="AlertView.xaml" expanded="True" />
+                  </Node>
+                </Node>
+              </Node>
             </Node>
           </Node>
         </State>
       </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
-      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.ExploracionPaquetes PreferredExecutionTarget="Android.tablet_h-dpi_13_5in_-_api_33" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="33.0.68" />
 </Properties>
