@@ -65,6 +65,11 @@ namespace ExploracionPaquetes.Src.Design.ViewModel
         {
             Application.Current.MainPage.Navigation.PushAsync(new RemindersView());
         }
+        [RelayCommand]
+        void GoToBottomAppBar()
+        {
+            Application.Current.MainPage.Navigation.PushAsync(new BottomAppBarView());
+        }
     }
 }
 

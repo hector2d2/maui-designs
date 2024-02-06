@@ -46,6 +46,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = ExploracionPaquetes.Src.De
 build_metadata.AdditionalFiles.TargetPath = Src/Design/Views/AddReminder.xaml
 build_metadata.AdditionalFiles.RelativePath = Src/Design/Views/AddReminder.xaml
 
+[/Users/sanbornhermanos/Desktop/Maui/ExploracionPaquetes/ExploracionPaquetes/Src/Design/Views/BottomAppBar.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ExploracionPaquetes.Src.Design.Views.BottomAppBar.xaml
+build_metadata.AdditionalFiles.TargetPath = Src/Design/Views/BottomAppBar.xaml
+build_metadata.AdditionalFiles.RelativePath = Src/Design/Views/BottomAppBar.xaml
+
 [/Users/sanbornhermanos/Desktop/Maui/ExploracionPaquetes/ExploracionPaquetes/Src/Design/Views/Calendar.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ExploracionPaquetes.Src.Design.Views.Calendar.xaml
@@ -82,6 +88,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = ExploracionPaquetes.Src.De
 build_metadata.AdditionalFiles.TargetPath = Src/Design/Views/ImagesWithMovement.xaml
 build_metadata.AdditionalFiles.RelativePath = Src/Design/Views/ImagesWithMovement.xaml
 
+[/Users/sanbornhermanos/Desktop/Maui/ExploracionPaquetes/ExploracionPaquetes/Src/Design/Views/ItemMenu.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ExploracionPaquetes.Src.Design.Views.ItemMenu.xaml
+build_metadata.AdditionalFiles.TargetPath = Src/Design/Views/ItemMenu.xaml
+build_metadata.AdditionalFiles.RelativePath = Src/Design/Views/ItemMenu.xaml
+
 [/Users/sanbornhermanos/Desktop/Maui/ExploracionPaquetes/ExploracionPaquetes/Src/Design/Views/ListDoingCardView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ExploracionPaquetes.Src.Design.Views.ListDoingCardView.xaml
@@ -105,6 +117,24 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ExploracionPaquetes.Src.Design.Views.SettingsView.xaml
 build_metadata.AdditionalFiles.TargetPath = Src/Design/Views/SettingsView.xaml
 build_metadata.AdditionalFiles.RelativePath = Src/Design/Views/SettingsView.xaml
+
+[/Users/sanbornhermanos/Desktop/Maui/ExploracionPaquetes/ExploracionPaquetes/Src/Design/Views/view1.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ExploracionPaquetes.Src.Design.Views.view1.xaml
+build_metadata.AdditionalFiles.TargetPath = Src/Design/Views/view1.xaml
+build_metadata.AdditionalFiles.RelativePath = Src/Design/Views/view1.xaml
+
+[/Users/sanbornhermanos/Desktop/Maui/ExploracionPaquetes/ExploracionPaquetes/Src/Design/Views/view2.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ExploracionPaquetes.Src.Design.Views.view2.xaml
+build_metadata.AdditionalFiles.TargetPath = Src/Design/Views/view2.xaml
+build_metadata.AdditionalFiles.RelativePath = Src/Design/Views/view2.xaml
+
+[/Users/sanbornhermanos/Desktop/Maui/ExploracionPaquetes/ExploracionPaquetes/Src/Design/Views/view3.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ExploracionPaquetes.Src.Design.Views.view3.xaml
+build_metadata.AdditionalFiles.TargetPath = Src/Design/Views/view3.xaml
+build_metadata.AdditionalFiles.RelativePath = Src/Design/Views/view3.xaml
 
 [/Users/sanbornhermanos/Desktop/Maui/ExploracionPaquetes/ExploracionPaquetes/Src/Home/Views/HomeView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml

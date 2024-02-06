@@ -175,7 +175,7 @@ public partial class RemindersView : ContentPage
 
     async Task GetAllReminders()
     {
-        await LocalNotificationCenter.RequestNotificationPermissionAsync(); 
+        // await LocalNotificationCenter.RequestNotificationPermissionAsync(); 
         IList<NotificationRequest> notifications = await LocalNotificationCenter.Current.GetPendingNotificationList();
         MyNotifications = new ObservableCollection<NotificationRequest>(notifications);
 

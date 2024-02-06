@@ -3,7 +3,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Maui.Controls.Compatibility.Hosting;
 using Microsoft.Maui.LifecycleEvents;
 using SkiaSharp.Views.Maui.Controls.Hosting;
-using Plugin.Firebase.Bundled.Shared;
+
 using ExploracionPaquetes.Src.Design.Views;
 using ExploracionPaquetes.Src.Security.Views;
 using Plugin.LocalNotification;
@@ -11,7 +11,7 @@ using Plugin.LocalNotification;
 using ExploracionPaquetes.Platforms.iOS;
 using Plugin.Firebase.Bundled.Platforms.iOS;
 #else
-using Plugin.Firebase.Bundled.Platforms.Android;
+
 #endif
 
 namespace ExploracionPaquetes;
@@ -107,9 +107,6 @@ public static class MauiProgram
         return builder;
     }    
 
-    private static CrossFirebaseSettings CreateCrossFirebaseSettings()
-    {
-        return new CrossFirebaseSettings(isAuthEnabled: true, isCloudMessagingEnabled: true);
-    }
+    
 }
 

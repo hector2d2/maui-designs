@@ -1244,6 +1244,7 @@
 /Users/sanbornhermanos/Desktop/Maui/ExploracionPaquetes/ExploracionPaquetes/obj/Debug/net7.0-android/stamp/_GenerateJavaStubs.stamp
 /Users/sanbornhermanos/Desktop/Maui/ExploracionPaquetes/ExploracionPaquetes/obj/Debug/net7.0-android/stamp/_GeneratePackageManagerJava.stamp
 /Users/sanbornhermanos/Desktop/Maui/ExploracionPaquetes/ExploracionPaquetes/obj/Debug/net7.0-android/stamp/_ResolveLibraryProjectImports.stamp
+/Users/sanbornhermanos/Desktop/Maui/ExploracionPaquetes/ExploracionPaquetes/obj/Debug/net7.0-android/ExploracionPaquetes.sourcelink.json
 /Users/sanbornhermanos/Desktop/Maui/ExploracionPaquetes/ExploracionPaquetes/obj/Debug/net7.0-android/android/assets/mscorlib.dll
 /Users/sanbornhermanos/Desktop/Maui/ExploracionPaquetes/ExploracionPaquetes/obj/Debug/net7.0-android/android/assets/System.Collections.Concurrent.dll
 /Users/sanbornhermanos/Desktop/Maui/ExploracionPaquetes/ExploracionPaquetes/obj/Debug/net7.0-android/android/assets/System.Data.Common.dll

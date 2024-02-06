@@ -744,6 +744,7 @@
             <inheritdoc/>
             <inheritdoc/>
             <inheritdoc/>
+            <inheritdoc/>
         </member>
         <member name="E:ExploracionPaquetes.Src.Design.ViewModel.VMdesignHome.PropertyChanged">
             <inheritdoc cref = "E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged"/>
@@ -1142,6 +1143,12 @@
         </member>
         <member name="P:ExploracionPaquetes.Src.Design.ViewModel.VMdesignHome.GoToRemindersCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:ExploracionPaquetes.Src.Design.ViewModel.VMdesignHome.GoToReminders"/>.</summary>
+        </member>
+        <member name="F:ExploracionPaquetes.Src.Design.ViewModel.VMdesignHome.goToBottomAppBarCommand">
+            <summary>The backing field for <see cref="P:ExploracionPaquetes.Src.Design.ViewModel.VMdesignHome.GoToBottomAppBarCommand"/>.</summary>
+        </member>
+        <member name="P:ExploracionPaquetes.Src.Design.ViewModel.VMdesignHome.GoToBottomAppBarCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:ExploracionPaquetes.Src.Design.ViewModel.VMdesignHome.GoToBottomAppBar"/>.</summary>
         </member>
         <member name="T:ExploracionPaquetes.Src.Design.ViewModel.VMdoingCard">
             <inheritdoc/>

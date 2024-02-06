@@ -58,5 +58,11 @@
             </Frame.GestureRecognizers>
             <Label Text="Recordatorios"/>
         </Frame>
+        <Frame>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding GoToBottomAppBarCommand}"/>
+            </Frame.GestureRecognizers>
+            <Label Text="Bottom App Bar"/>
+        </Frame>
     </VerticalStackLayout>
 </ContentPage>
