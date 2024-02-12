@@ -2,9 +2,16 @@
 <ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              BackgroundColor="White"
+             x:Name="this"
              x:Class="ExploracionPaquetes.Src.Design.Views.ItemMenu">
+    <ContentView.GestureRecognizers>
+        <TapGestureRecognizer x:Name="Menu"
+                              Tapped="Menu_Tapped"/> 
+    </ContentView.GestureRecognizers>
     <VerticalStackLayout>
-        <Label Text="Hola mundo"/>
-        <Label Text="Hola mundo"/>
+       <Label Text="{Binding Name}"
+               BindingContext="{x:Reference this}"/>
+        <Label Text="{Binding IconName}"
+               BindingContext="{x:Reference this}"/>
     </VerticalStackLayout>
 </ContentView>

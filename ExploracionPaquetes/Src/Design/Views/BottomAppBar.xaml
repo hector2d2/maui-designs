@@ -2,40 +2,23 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:customController="clr-namespace:ExploracionPaquetes.Src.Design.Views"
+             xmlns:template="clr-namespace:ExploracionPaquetes.Src.Design.Templates"
              Title="Menu Abajo"
              x:Name="this"
              x:Class="ExploracionPaquetes.Src.Design.Views.BottomAppBarView">
-    <Grid RowDefinitions="*,Auto"
-     BackgroundColor="Blue">
-        <Grid>
-            <customController:View1/>
-            <!-- <customController:View2/>
-            <customController:View3/> -->
-        </Grid>
-        <CollectionView ItemsSource="{Binding Menus}"
-                        HeightRequest="50"
-                        BackgroundColor="Red"
-                        BindingContext="{x:Reference this}"
-                        Grid.Row="1">
-            <CollectionView.ItemTemplate>
+    <Grid RowDefinitions="*,Auto">
+        <ContentView Content="{Binding Content}"/>
+        <HorizontalStackLayout Grid.Row="1"
+                               BindableLayout.ItemsSource="{Binding Menus}"
+                               x:Name="menus">
+            <BindableLayout.ItemTemplate>
                 <DataTemplate>
-                    <customController:ItemMenu/>
+                    <customController:ItemMenu Name="{Binding Title}"
+                                               IconName="{Binding IconName}"
+                                               IdMenu="{Binding Id}"
+                                               WidthRequest="{Binding Path=BindingContext.SizeWidthBottomAppBar, Source={x:Reference this}}"/>
                 </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
-        <!-- <Grid ColumnDefinitions="*,*,*"
-              BackgroundColor="Red"
-              
-             >
-            <VerticalStackLayout Grid.Column="0">
-                <Label Text="Hola mundo 1"/>
-            </VerticalStackLayout>
-            <VerticalStackLayout Grid.Column="1">
-                <Label Text="Hola mundo 2"/>
-            </VerticalStackLayout>
-            <VerticalStackLayout Grid.Column="2">
-                <Label Text="Hola mundo 3"/>
-            </VerticalStackLayout>
-        </Grid> -->
+            </BindableLayout.ItemTemplate>
+        </HorizontalStackLayout>
     </Grid>    
 </ContentPage>

@@ -11,7 +11,9 @@ public partial class InvoqueNativeCodeView : ContentPage
 
     void BtmDoNativecode_Clicked(System.Object sender, System.EventArgs e)
     {
+#if ANDROID || IOS
         ShowTextInterface showTextInterface = new ShowTextService();
         TxtNativeCode.Text = showTextInterface.TextFromPlatform();
+#endif
     }
 }

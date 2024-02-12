@@ -1,32 +1,19 @@
-using System.Collections.ObjectModel;
+using ExploracionPaquetes.Src.Design.ViewModel;
 
 namespace ExploracionPaquetes.Src.Design.Views;
 public partial class BottomAppBarView : ContentPage
 {
-    public ObservableCollection<Menu> Menus = new ObservableCollection<Menu>(){
-        new Menu()
-        {
-            Id = 1,
-            Name = "Pagina 1",
-            IconName = " Icon 1"
-        },
-        new Menu()
-        {
-            Id = 2,
-            Name = "Pagina 2",
-            IconName = " Icon 1"
-        },
-        new Menu()
-        {
-            Id = 3,
-            Name = "Pagina 3",
-            IconName = " Icon 1"
-        },
-    };
-
+   
     public BottomAppBarView()
     {
-        BindingContext = this;
+        BindingContext = new VMBottomAppBar();
         InitializeComponent();
+    }
+
+    protected override void OnSizeAllocated(double width, double height)
+    {
+        base.OnSizeAllocated(width, height);
+        VMBottomAppBar vMBottomAppBar = (VMBottomAppBar)BindingContext;
+        vMBottomAppBar.SizeWidthBottomAppBar = width / 3;
     }
 }

@@ -2,7 +2,6 @@
 using Microsoft.Extensions.Logging;
 using Microsoft.Maui.Controls.Compatibility.Hosting;
 using Microsoft.Maui.LifecycleEvents;
-using SkiaSharp.Views.Maui.Controls.Hosting;
 
 using ExploracionPaquetes.Src.Design.Views;
 using ExploracionPaquetes.Src.Security.Views;
@@ -26,7 +25,6 @@ public static class MauiProgram
             .UseMauiApp<App>()
             .RegisterFirebaseServices()
             .UseMauiCompatibility()
-            .UseSkiaSharp()
             .UseMauiCameraView()
             .UseLocalNotification(config =>
             config.AddiOS(iOS =>
