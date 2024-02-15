@@ -1,0 +1,36 @@
+<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:home="clr-namespace:ExploracionPaquetes.Src.Home.Views"
+       xmlns:design="clr-namespace:ExploracionPaquetes.Src.Design.Views"
+       xmlns:security="clr-namespace:ExploracionPaquetes.Src.Security.Views"
+       xmlns:signin="clr-namespace:ExploracionPaquetes.Src.Templates.SignIn.Views"
+       xmlns:listtodo="clr-namespace:ExploracionPaquetes.Src.Templates.ListTodo.Views"
+       xmlns:miespacio="clr-namespaio:ExploracionPaquetes.Src.Templates.MiEspacio.Views"
+       x:Class="ExploracionPaquetes.AppShell">
+       
+    <ShellItem Route="HomePage" FlyoutItemIsVisible="False">
+        <ShellContent ContentTemplate="{DataTemplate home:HomeView}"/>
+    </ShellItem>
+    <ShellItem Route="DesignHomePage" FlyoutItemIsVisible="False">
+        <ShellContent ContentTemplate="{DataTemplate design:DesignHomeView}"/>
+    </ShellItem>
+    <ShellItem Route="SecurityPage" FlyoutItemIsVisible="False">
+        <ShellContent ContentTemplate="{DataTemplate security:SecurityHome}"/>
+    </ShellItem>
+    <ShellItem Route="AuthenticationPage" FlyoutItemIsVisible="False">
+        <ShellContent ContentTemplate="{DataTemplate signin:SignInView}"/>
+    </ShellItem>
+    <ShellItem Route="ListThingsPage" FlyoutItemIsVisible="False">
+        <ShellContent ContentTemplate="{DataTemplate listtodo:MenuListTodoView}"/>
+    </ShellItem>
+
+    <!-- <FlyoutPage Title="Home"
+                >
+        <Tab Title="Mi espacio">
+            <ShellContent ContentTemplate="{DataTemplate miespacio:MEmiespacio}" Route="miespacio"/>
+        </Tab>
+        <Tab Title="Apps">
+            <ShellContent ContentTemplate="{DataTemplate miespacio:MEapps}" Route="apps"/>
+        </Tab>
+    </FlyoutPage> -->
+</Shell>

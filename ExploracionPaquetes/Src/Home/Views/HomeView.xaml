@@ -1,32 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:CardMenuController="clr-namespace:ExploracionPaquetes.Src.CustomControllers.CardMenu"
              x:Class="ExploracionPaquetes.Src.Home.Views.HomeView"
+             x:Name="this"
              Title="HomeView">
-    <VerticalStackLayout>
-        <Frame>
-            <Frame.GestureRecognizers>
-                <TapGestureRecognizer Command="{Binding GoToSecurityViewsCommand}"/>
-            </Frame.GestureRecognizers>
-            <Label Text="Seguridad"/>
-        </Frame>
-        <Frame>
-            <Frame.GestureRecognizers>
-                <TapGestureRecognizer Command="{Binding GoToDesignViewsCommand}"/>
-            </Frame.GestureRecognizers>
-            <Label Text="Diseño"/>
-        </Frame>
-        <Frame>
-            <Frame.GestureRecognizers>
-                <TapGestureRecognizer Command="{Binding GoToSignInViewCommand}"/>
-            </Frame.GestureRecognizers>
-            <Label Text="Autenticacion."/>
-        </Frame>
-         <Frame>
-            <Frame.GestureRecognizers>
-                <TapGestureRecognizer Command="{Binding GotoMenuListTodoCommand}"/>
-            </Frame.GestureRecognizers>
-            <Label Text="Lista de cosas."/>
-        </Frame>
-    </VerticalStackLayout>
+    <CollectionView ItemsSource="{Binding Menus}"
+                    Margin="10"
+                    ItemsLayout="VerticalGrid, 2">
+        <CollectionView.ItemTemplate>
+            <DataTemplate>
+                <CardMenuController:CardMenuView Title="{Binding Title}"
+                                                 OnTapCommand="{Binding Path=BindingContext.GoToMenuSelectedCommand, Source={x:Reference this}}"
+                                                 OnTapParameterCommand="{Binding RouteName}"
+                                                 Margin="10"
+                                                 IconName="{Binding IconName}"/> 
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+    </CollectionView>
 </ContentPage>
